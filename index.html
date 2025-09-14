@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-indigo-600 shadow-md sticky top-0 z-50  px-4">
+      <nav class="flex justify-between items-center py-6  md:px-11">
+        <a class="flex items-center gap-2" href="index.html"><h1 class="text-[15px] font-semibold text-indigo-600 text-white">Bijoy_Blog</h1></a>
+        <div class="flex">
+          <ul class="flex hidden md:flex gap-2 items-center text-gray-600 text-white">
+            <li><a href="#home" class="hover:text-indigo-300 pr-6">Home</a></li>
+            <li><a href="#about" class="hover:text-indigo-300 pr-6">About</a></li>
+            <li><a href="#posts" class="hover:text-indigo-300 pr-6">Blog</a></li>
+            <li><a href="#conact" class="hover:text-indigo-300 ">Contact</a></li>
+          </ul>
+          
+      <button id="navBtn" class="md:hidden p-2 rounded hover:bg-gray-500 text-white">☰</button>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div id="mobileNav" class="md:hidden hidden border-t text-white">
+        <div class="px-6 py-4 flex flex-col gap-3">
+          <a href="#home" class="hover:text-indigo-300 pr-6">Home</a>
+          <a href="#about" class="hover:text-indigo-300 pr-6">About</a>
+          <a href="#posts" class="hover:text-indigo-300 pr-6">Blog</a>
+          <a href="#contact" class="hover:text-indigo-300 pr-6">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <script>
+    // Mobile nav toggle
+        document.getElementById('navBtn').addEventListener('click', ()=>{
+        document.getElementById('mobileNav').classList.toggle('hidden');
+        });
+    </script>
+    
+
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-gradient-to-r from-pink-500 to-red-600 text-white text-center py-20 px-4">
+    <h2 class="text-4xl font-bold mb-4">Welcome to My Blog</h2>
+    <p class="text-lg mb-6">Sharing thoughts, tutorials, and stories on web design & development.</p>
+    <a href="#posts" class="bg-white text-pink-600 px-6 py-3 rounded-full font-semibold shadow-md">Read Posts</a>
+  </section>
+
+  <!-- Blog Posts -->
+  <section id="posts" class="container mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Latest Posts</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Post 1 -->
+      <article class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="blog.jpg" alt="Post 1" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Getting Started with HTML & CSS</h3>
+          <p class="text-gray-600 mb-4">A beginner-friendly guide to building your first website using HTML and CSS.</p>
+          <a href="#" class="text-pink-600 font-semibold hover:underline">Read More</a>
+        </div>
+      </article>
+
+      <!-- Post 2 -->
+      <article class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="blog.jpg" alt="Post 2" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Top 5 Tailwind CSS Tips</h3>
+          <p class="text-gray-600 mb-4">Learn useful Tailwind CSS tricks to improve your web design workflow.</p>
+          <a href="#" class="text-pink-600 font-semibold hover:underline">Read More</a>
+        </div>
+      </article>
+
+      <!-- Post 3 -->
+      <article class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="blog.jpg" alt="Post 3" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Why WordPress is Still Powerful</h3>
+          <p class="text-gray-600 mb-4">Discover why WordPress remains the best CMS for blogs and businesses.</p>
+          <a href="#" class="text-pink-600 font-semibold hover:underline">Read More</a>
+        </div>
+      </article>
+
+      <!-- Post 4 -->
+    <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+      <img src="blog.jpg" alt="Post 4" class="w-full">
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Effective SEO Strategies for Small Businesses</h3>
+        <p class="text-gray-600 mb-4">Learn how to optimize your website and content to rank higher in search engines.</p>
+        <span class="text-sm text-gray-400">Sep 5, 2025</span>
+      </div>
+    </div>
+
+    <!-- Post 5 -->
+    <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+      <img src="blog.jpg" alt="Post 5" class="w-full">
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Top Tools for Project Management</h3>
+        <p class="text-gray-600 mb-4">Explore the tools that help teams stay organized and productive in 2025.</p>
+        <span class="text-sm text-gray-400">Sep 3, 2025</span>
+      </div>
+    </div>
+
+    <!-- Post 6 -->
+    <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+      <img src="blog.jpg" alt="Post 6" class="w-full">
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">How to Build an Effective Email Campaign</h3>
+        <p class="text-gray-600 mb-4">Step-by-step guide to creating email campaigns that convert.</p>
+        <span class="text-sm text-gray-400">Sep 1, 2025</span>
+      </div>
+    </div>
+
+    <!-- Post 7 -->
+    <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+      <img src="blog.jpg" alt="Post 7" class="w-full">
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Social Media Trends You Must Know</h3>
+        <p class="text-gray-600 mb-4">Stay ahead of competitors by adopting the latest social media trends.</p>
+        <span class="text-sm text-gray-400">Aug 30, 2025</span>
+      </div>
+    </div>
+
+    <!-- Post 8 -->
+    <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+      <img src="blog.jpg" alt="Post 8" class="w-full">
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Design Thinking for Entrepreneurs</h3>
+        <p class="text-gray-600 mb-4">How design thinking can help entrepreneurs create innovative solutions.</p>
+        <span class="text-sm text-gray-400">Aug 28, 2025</span>
+      </div>
+    </div>
+
+    <!-- Post 9 -->
+    <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+      <img src="blog.jpg" alt="Post 9" class="w-full">
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Content Marketing Strategies for 2025</h3>
+        <p class="text-gray-600 mb-4">Tips to create content that engages and converts your audience effectively.</p>
+        <span class="text-sm text-gray-400">Aug 25, 2025</span>
+      </div>
+    </div>
+
+    <!-- Post 10 -->
+    <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+      <img src="blog.jpg" alt="Post 10" class="w-full">
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">How to Improve Customer Experience</h3>
+        <p class="text-gray-600 mb-4">Best practices for delivering excellent customer experience in 2025.</p>
+        <span class="text-sm text-gray-400">Aug 22, 2025</span>
+      </div>
+    </div>
+
+    <!-- Post 11 -->
+    <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+      <img src="blog.jpg" alt="Post 11" class="w-full">
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Analytics Tools to Track Your Growth</h3>
+        <p class="text-gray-600 mb-4">Use these analytics tools to monitor your business growth efficiently.</p>
+        <span class="text-sm text-gray-400">Aug 20, 2025</span>
+      </div>
+    </div>
+
+    <!-- Post 12 -->
+    <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+      <img src="blog.jpg" alt="Post 12" class="w-full">
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Tips for Remote Work Productivity</h3>
+        <p class="text-gray-600 mb-4">Improve your team’s efficiency while working remotely with these tips.</p>
+        <span class="text-sm text-gray-400">Aug 18, 2025</span>
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-gray-100 py-16 px-6">
+    <div class="container mx-auto text-center max-w-3xl">
+      <h2 class="text-3xl font-bold mb-6">About Me</h2>
+      <p class="text-gray-700">
+        Hi, I'm Bijoy Sikder, a Front-End Designer passionate about sharing web design & development knowledge. 
+        I write tutorials, tips, and insights to help beginners and professionals build modern websites.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-8">Get in Touch</h2>
+    <form class="max-w-xl mx-auto space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full border px-4 py-2 rounded-lg" required>
+      <input type="email" placeholder="Your Email" class="w-full border px-4 py-2 rounded-lg" required>
+      <textarea placeholder="Your Message" class="w-full border px-4 py-2 rounded-lg" rows="5"></textarea>
+      <button type="submit" class="bg-pink-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-pink-700">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <p>© 2025 MyBlog | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
